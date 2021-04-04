@@ -22,7 +22,7 @@ out1(i)<=A(i) and sel_sig(0);
 out2(i)<=A(i) and sel_sig(1);
 out3(i)<=A(i) and sel_sig(2);
 out4(i)<=A(i) and sel_sig(3);
-end generate1;
+end generate generate1;
 
 
 end arch_demux4bit ; -- arch_demux4bit
