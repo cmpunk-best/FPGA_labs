@@ -17,12 +17,12 @@ sel_sig(0)<=(not sel(0)) and (not sel(1));
 sel_sig(1)<=( sel(0)) and (not sel(1));
 sel_sig(2)<=(not sel(0)) and ( sel(1));
 sel_sig(3)<=( sel(0)) and ( sel(1));
-generate:for i in 0 to 3 generate
+generate1:for i in 0 to 3 generate
 out1(i)<=A(i) and sel_sig(0);
 out2(i)<=A(i) and sel_sig(1);
 out3(i)<=A(i) and sel_sig(2);
 out4(i)<=A(i) and sel_sig(3);
-end generate;
+end generate generate1;
 
 
 end arch_demux4bit ; -- arch_demux4bit

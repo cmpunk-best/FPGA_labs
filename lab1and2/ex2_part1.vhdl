@@ -4,7 +4,7 @@ use IEEE.std_logic_1164.all;
 entity priorencoder is
     port (
         A:in std_logic_vector(2 downto 0);
-        out1:out std_logic_vector(1 downto 0);
+        out1:out std_logic_vector(1 downto 0)
     );
 end entity priorencoder;
 

@@ -15,10 +15,18 @@ demuxpro: process(A,sel)
 begin
    case( sel ) is
    
-    when "00" =>out1<=A;
-    when "01" =>out2<=A;
-    when "10" =>out3<=A;
-    when "11" =>out4<=A;
+    when "00" =>out1<=A;out2<="0000",
+                  out3<="0000",
+                  out4<="0000";
+    when "01" =>out2<=A;out1<="0000",
+                  out3<="0000",
+                  out4<="0000";
+    when "10" =>out3<=A;out2<="0000",
+                  out1<="0000",
+                  out4<="0000";
+    when "11" =>out4<=A;out2<="0000",
+                  out3<="0000",
+                  out1<="0000";
    
     when others =>out1<="0000",
                   out2<="0000",
